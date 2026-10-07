@@ -4,7 +4,7 @@
 
 EvoOps helps internal IT and operations teams triage work automatically: classify incoming tickets, retrieve the right runbook, choose and invoke tools, act or notify stakeholders, capture human feedback, and **evolve agent configuration** (prompts, routing, tool policies)—never arbitrary production source code—through evaluation, approval, and controlled rollout.
 
-This repository is currently **planning-docs-only**. Phase 0 (monorepo scaffold and baseline CI) is defined but not yet implemented. See [Project Status](docs/PROJECT_STATUS.md) and [Roadmap](docs/ROADMAP.md).
+Phase 0 scaffold is underway: Next.js (`apps/web`) and FastAPI (`apps/api`) health shells run locally. Full product features start in later phases. See [Local setup](docs/LOCAL_SETUP.md), [Project Status](docs/PROJECT_STATUS.md), and [Roadmap](docs/ROADMAP.md).
 
 **GitHub:** [https://github.com/PawishrajhenAR/EvoOpsEGG.git](https://github.com/PawishrajhenAR/EvoOpsEGG.git)
 

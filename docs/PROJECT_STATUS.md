@@ -1,16 +1,16 @@
 # EvoOps — Project Status
 
-**Last updated:** Planning phase (pre-implementation)  
+**Last updated:** 2026-10-07 — Phase 1 auth foundation (local, not pushed)  
 **Repository:** [EvoOpsEGG](https://github.com/PawishrajhenAR/EvoOpsEGG.git)  
-**Implementation phase:** **Not started** (Phase 0 pending)
+**Implementation phase:** **Phase 1** — profiles/roles/RLS + login UI + API JWT gates
 
 ---
 
 ## Executive summary
 
-Planning documentation for EvoOps is **complete** at the product, architecture, and data-model level. The repo contains **placeholder directories only** (`apps/web`, `apps/api`, `supabase/migrations`, `tests/unit`, `scripts`) with no application code, migrations, or CI workflows yet.
+Planning docs are complete. Phase 0 shells and **Phase 1 auth** (Supabase profiles/roles/RLS, web login, API JWT) are implemented locally on project **EvoOpsEGG**.
 
-**Next gate:** Implement **Phase 0** (monorepo scaffold, baseline tooling, initial Supabase project wiring, and first authorized push policy acknowledgment).
+**Next gate:** Human test signup → bootstrap admin → role grants, then **Phase 2** (agent versions). Push only after explicit approval.
 
 ---
 
@@ -32,9 +32,9 @@ Planning documentation for EvoOps is **complete** at the product, architecture, 
 
 | Area | Status | Blocked by |
 |------|--------|------------|
-| Next.js web app | ❌ Not started | Phase 0–1 |
-| FastAPI service | ❌ Not started | Phase 0–2 |
-| Supabase migrations & RLS | ❌ Not started | Phase 0–1 |
+| Next.js web app | ✅ Phase 0 shell | `apps/web` — `npm run dev` → :3000 |
+| FastAPI service | ✅ Phase 0 shell | `apps/api` — `/health` + OpenAPI; pytest green |
+| Supabase migrations & RLS | ✅ Phase 1 | `profiles`, `roles`, `user_roles` + RLS + RPCs on EvoOpsEGG |
 | Agent orchestrator | ❌ Not started | Phase 3+ |
 | Ops RAG (pgvector) | ❌ Not started | Phase 4 |
 | Tool connectors & policies | ❌ Not started | Phase 5 |
